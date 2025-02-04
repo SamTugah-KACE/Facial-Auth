@@ -1,0 +1,52 @@
+fastapi
+uvicorn
+sqlalchemy
+pydantic
+tensorflow
+facenet-pytorch
+torch
+numpy
+scikit-learn
+requests
+torchvision
+alembic
+SQLAlchemy
+SQLAlchemy-Utils
+starlette
+typing
+typing-extensions
+asyncpg
+psycopg2-binary
+opencv-python
+Pillow
+passlib
+python-jose
+inflect
+python-dotenv
+python-multipart
+psutil
+jsonschema
+retinaface
+# csv
+# dlib
+
+# facenet_pytorch>=2.5.3
+# fastapi>=0.110.3
+# pydantic>=2.7.1
+# torch>=2.2.2
+# t
+# uvicorn>=0.28.1
+
+# scikit-learn
+# passlib
+# python-jose
+# opencv_python_headless>=4.9.0.80
+
+# pydantic>=2.7.1
+# torch>=2.2.2
+# t
+# uvicorn>=0.28.1
+
+# scikit-learn
+# passlib
+# python-jose
