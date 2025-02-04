@@ -22,7 +22,8 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Set the working directory
-WORKDIR /app
+# WORKDIR /app
+WORKDIR /
 
 # FROM tensorflow/tensorflow:2.5.0-gpu
 
