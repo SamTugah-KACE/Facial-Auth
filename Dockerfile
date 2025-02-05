@@ -1,8 +1,13 @@
 # Use an official Python runtime as a parent image
 # ARG PYTHON_VERSION=3.12.2
 # ARG PYTHON_VERSION=3.10-slim
-ARG PYTHON_VERSION=3.9-slim
+
+# ARG PYTHON_VERSION=3.9-slim
+# FROM python:${PYTHON_VERSION} as base
+
+ARG PYTHON_VERSION=3.9-slim-bullseye
 FROM python:${PYTHON_VERSION} as base
+
 
 # Prevents Python from writing pyc files.
 ENV PYTHONDONTWRITEBYTECODE=1
@@ -39,8 +44,13 @@ COPY requirements.txt .
 
 
 # Install dependencies with cache optimization
+# RUN --mount=type=cache,target=/root/.cache/pip \
+#     pip install --no-cache-dir --default-timeout=2000 --retries 10 -r requirements.txty
+
 RUN --mount=type=cache,target=/root/.cache/pip \
-    pip install --no-cache-dir --default-timeout=1000 -r requirements.txt
+    pip install --no-cache-dir --default-timeout=2000 --retries 10 --progress-bar off -r requirements.txt
+
+
     # pip install --no-cache-dir -r requirements.txt --progress-bar off  --default-timeout=1000 --use-feature=fast-deps
 
 # Copy the wait-for-it.sh script
