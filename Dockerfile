@@ -41,7 +41,8 @@ COPY requirements.txt .
 
 # Install Python dependencies
 RUN python -m pip install --upgrade pip setuptools wheel
-RUN python -m pip install  --no-cache-dir --default-timeout=10000 --retries 10 --progress-bar off -r requirements.txt
+# RUN python -m pip install  --no-cache-dir --default-timeout=10000 --retries 10 --progress-bar off -r requirements.txt
+RUN python -m pip install --no-cache-dir --index-url https://pypi.org/simple -r requirements.txt
 
 
 # Install dependencies with cache optimization

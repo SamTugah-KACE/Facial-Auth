@@ -23,7 +23,8 @@ passlib==1.7.4
 python-jose==3.3.0
 inflect
 python-dotenv==1.0.1
-python-multipart==1.0.9
+# python-multipart==1.0.9
+python-multipart>=0.0.20
 psutil
 jsonschema
 retinaface==0.0.10
