@@ -32,7 +32,7 @@ WORKDIR /
 
 # FROM tensorflow/tensorflow:2.5.0-gpu
 
-RUN pip install retinaface
+# RUN pip install retinaface
 
 
 # Copy requirements.txt into the container
