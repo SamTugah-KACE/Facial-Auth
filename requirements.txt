@@ -17,7 +17,7 @@ typing
 typing-extensions
 asyncpg==0.29.0
 psycopg2-binary==2.9.9
-opencv-python==4.9.0
+opencv-python
 Pillow==10.2.0
 passlib==1.7.4
 python-jose==3.3.0

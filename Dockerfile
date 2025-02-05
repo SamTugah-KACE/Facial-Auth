@@ -45,7 +45,8 @@ COPY requirements.txt .
 
 # Install dependencies with cache optimization
 RUN --mount=type=cache,target=/root/.cache/pip \
-    pip install --no-cache-dir --default-timeout=2000 --retries 10 --progress-bar off -r requirements.txt
+    pip install --no-cache-dir --default-timeout=2000 --retries 10 -r requirements.txt
+
 # RUN --mount=type=cache,target=/root/.cache/pip \
 #     pip install --no-cache-dir --default-timeout=2000 --retries 10 --progress-bar off -r requirements.txt 
 # # RUN --mount=type=cache,target=/root/.cache/pip \
