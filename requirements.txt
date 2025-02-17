@@ -27,7 +27,7 @@ python-dotenv==1.0.1
 python-multipart>=0.0.20
 psutil
 jsonschema
-retinaface==0.0.10
+retinaface==1.1.1
 # csv
 # dlib
 
