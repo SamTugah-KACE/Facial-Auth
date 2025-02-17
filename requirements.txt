@@ -6,7 +6,8 @@ pydantic==2.5.3
 tensorflow==2.5.0
 facenet-pytorch==2.5.2
 torch==2.1.2
-numpy==1.26.4
+# numpy==1.26.4
+numpy==1.19.2
 scikit-learn==1.4.0
 requests==2.31.0
 torchvision==0.16.2
