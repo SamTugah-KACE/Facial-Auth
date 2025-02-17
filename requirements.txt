@@ -13,7 +13,7 @@ alembic==1.13.1
 SQLAlchemy
 SQLAlchemy-Utils
 # starlette==0.37.2
-starlette==0.36.6
+starlette==0.36.3
 typing
 typing-extensions
 asyncpg==0.29.0
