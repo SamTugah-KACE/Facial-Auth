@@ -1,11 +1,11 @@
 # Use an official Python runtime as a parent image
 # ARG PYTHON_VERSION=3.12.2
-# ARG PYTHON_VERSION=3.10-slim
+ARG PYTHON_VERSION=3.10-slim
 
 # ARG PYTHON_VERSION=3.9-slim
 # FROM python:${PYTHON_VERSION} as base
 
-ARG PYTHON_VERSION=3.9-slim-bullseye
+# ARG PYTHON_VERSION=3.9-slim-bullseye
 FROM python:${PYTHON_VERSION} as base
 
 
