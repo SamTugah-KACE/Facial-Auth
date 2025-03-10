@@ -30,7 +30,7 @@ RUN apt-get update && apt-get install -y \
 # WORKDIR /app
 WORKDIR /
 
-# FROM tensorflow/tensorflow:2.5.0-gpu
+FROM tensorflow/tensorflow:2.5.0-gpu
 
 # RUN pip install retinaface
 
