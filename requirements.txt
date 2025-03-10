@@ -2,20 +2,20 @@ fastapi==0.109.2
 uvicorn==0.27.1
 sqlalchemy==2.0.29
 pydantic==2.5.3
-# -tensorflow==2.15.0
-tensorflow==2.5.0
+tensorflow==2.15.0
+# tensorflow==2.5.0
 facenet-pytorch==2.5.2
 torch==2.1.2
-# numpy==1.26.4
-numpy==1.19.2
+numpy==1.26.4
+# numpy==1.19.2
 scikit-learn==1.4.0
 requests==2.31.0
 torchvision==0.16.2
 alembic==1.13.1
 SQLAlchemy
 SQLAlchemy-Utils
-# starlette==0.37.2
-starlette==0.36.3
+starlette==0.37.2
+# starlette==0.36.3
 typing
 typing-extensions
 asyncpg==0.29.0
@@ -26,11 +26,11 @@ passlib==1.7.4
 python-jose==3.3.0
 inflect
 python-dotenv==1.0.1
-# python-multipart==1.0.9
-python-multipart>=0.0.20
+python-multipart==1.0.9
+# python-multipart>=0.0.20
 psutil
 jsonschema
-retinaface==1.1.1
+retinaface
 # csv
 # dlib
 
