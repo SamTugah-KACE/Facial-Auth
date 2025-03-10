@@ -32,7 +32,7 @@ psutil
 jsonschema
 retinaface
 
---no-cache-dir
+
 
 
 
