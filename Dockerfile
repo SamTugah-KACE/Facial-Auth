@@ -27,7 +27,7 @@ COPY requirements.txt .
 
 # Install Python dependencies
 RUN --mount=type=cache,target=/root/.cache/pip \
-    pip install torch torchvision numpy scikit-learn opencv-python --no-cache-dir && \
+    pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu  && \
     pip install --no-cache-dir --default-timeout=10000 --retries 10 --progress-bar off -r requirements.txt && \
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /root/.cache
 # Copy the rest of the source code into the container
