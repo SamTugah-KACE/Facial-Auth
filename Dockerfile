@@ -27,8 +27,8 @@ COPY requirements.txt .
 
 # Install Python dependencies
 RUN --mount=type=cache,target=/root/.cache/pip \
-    pip install --no-cache-dir --default-timeout=10000 --retries 10 --progress-bar off -r requirements.txt
-
+    pip install --no-cache-dir --default-timeout=10000 --retries 10 --progress-bar off -r requirements.txt && \
+    apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /root/.cache
 # Copy the rest of the source code into the container
 COPY . .
 
